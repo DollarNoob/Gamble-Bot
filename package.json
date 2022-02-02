@@ -1,0 +1,32 @@
+{
+  "name": "gamble-bot",
+  "version": "1.0.0",
+  "description": "A minesweeper game written in NodeJS using DiscordJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dollar3795/Gamble-Bot.git"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "discordjs",
+    "minesweeper",
+    "gamble",
+    "gambling",
+    "stake"
+  ],
+  "author": "Dollar3795",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Dollar3795/Gamble-Bot/issues"
+  },
+  "homepage": "https://github.com/Dollar3795/Gamble-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "sqlite3": "^5.0.2"
+  }
+}
