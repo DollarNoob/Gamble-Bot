@@ -123,7 +123,7 @@ Client.on("interactionCreate", async function(interaction) {
             for (const item of game.getItems()) {
                 if (item.revealed && item.type === 2) totalScores += 1;
             }
-            totalScores *= game.getDifficulty();
+            totalScores *= (game.getDifficulty() + 2);
             if (totalScores !== 0) await dbRun("UPDATE users SET itemLevel = itemLevel + ? WHERE userId = ?", [totalScores, interaction.user.id]);
             await interaction.message.edit({"content": interaction.message.content, "embeds": [new Discord.MessageEmbed()
                 .setTitle("✅ **게임 종료**")
