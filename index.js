@@ -25,7 +25,7 @@ Client.on("ready", async function() {
             for (var i = 0; i < rows.length; i++) descMessage.push(`${i + 1}. ${await lbChannel.guild.members.fetch(rows[i].userId).then(m => m.user.tag).catch(() => "Unknown User#0000")} - LV ${rows[i].itemLevel}`);
             if (rows && rows.length !== 0) lbMessage.edit({"embeds": [new Discord.MessageEmbed().setTitle("📊 **강화 순위**").setDescription(descMessage.join("\n")).setColor("BLUE")]});
         });
-    }, 3000);
+    }, 10000);
 });
 
 Client.on("messageCreate", async function(message) {
